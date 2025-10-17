@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Store - Prestige Collection</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="global-light-sweep"></div>
+
+<header class="header">
+    <div class="header-shine"></div>
+    
+    <img src="logo1.png" alt="Stellar Modern Logo" class="store-logo">
+</header>
+
+<main class="product-grid">
+
+    <section class="product-card" data-product-name="Aero-Knit Hoodie" data-whatsapp-number="+212698302640" data-selected-color="Black">
+        <span class="product-status-badge hot-badge">HOT</span> 
+        <img src="placeholder-image-1.jpg" alt="Aero-Knit Hoodie" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Aero-Knit Hoodie</h3>
+            <p class="product-description">The ultimate blend of comfort and street style. Features moisture-wicking fabric and a hidden zip pocket.</p>
+            <div class="details-row">
+                <span class="price">$59.99</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-1">Size:</label>
+                    <select id="size-1" class="size-select">
+                        <option value="S">S</option><option value="M" selected>M</option><option value="L">L</option><option value="XL">XL</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch black selected" data-color="Black" onclick="selectColor(this)"></div>
+                        <div class="color-swatch navy" data-color="Navy" onclick="selectColor(this)"></div>
+                        <div class="color-swatch ash-grey" data-color="Ash Grey" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Slim-Fit Denim" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <span class="product-status-badge new-badge">NEW ARRIVAL</span>
+        <img src="placeholder-image-2.jpg" alt="Slim-Fit Denim" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Slim-Fit Denim</h3>
+            <p class="product-description">Premium stretch denim that holds its shape. A modern cut for a sharp look, all day comfort.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-2">Size:</label>
+                    <select id="size-2" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Apollo Sneakers" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <span class="product-status-badge limited-badge">LIMITED EDITION</span>
+        <img src="logoold.png" alt="Apollo Sneakers" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Apollo Sneakers</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-3">Size:</label>
+                    <select id="size-3" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+    
+    <section class="product-card" data-product-name="Zenith Backpack" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Zenith Backpack" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Zenith Backpack</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-4">Size:</label>
+                    <select id="size-4" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Aurora Bomber Jacket" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Aurora Bomber Jacket" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Aurora Bomber Jacket</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-5">Size:</label>
+                    <select id="size-5" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+    
+    <section class="product-card" data-product-name="Fusion Cargo Pants" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Fusion Cargo Pants" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Fusion Cargo Pants</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-6">Size:</label>
+                    <select id="size-6" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Apex Smartwatch" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Apex Smartwatch" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Apex Smartwatch</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-7">Size:</label>
+                    <select id="size-7" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Vortex Tech Cap" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Vortex Tech Cap" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Vortex Tech Cap</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-8">Size:</label>
+                    <select id="size-8" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Echo Performance Tee" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Echo Performance Tee" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Echo Performance Tee</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-9">Size:</label>
+                    <select id="size-9" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Tidal Swim Shorts" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Tidal Swim Shorts" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Tidal Swim Shorts</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-10">Size:</label>
+                    <select id="size-10" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Orbit Lounge Set" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Orbit Lounge Set" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Orbit Lounge Set</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-11">Size:</label>
+                    <select id="size-11" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Nova Utility Vest" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Nova Utility Vest" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Nova Utility Vest</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-12">Size:</label>
+                    <select id="size-12" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Phantom Scarf" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Phantom Scarf" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Phantom Scarf</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-13">Size:</label>
+                    <select id="size-13" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Glacier Water Bottle" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Glacier Water Bottle" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Glacier Water Bottle</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-14">Size:</label>
+                    <select id="size-14" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Kinetic Gloves" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Kinetic Gloves" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Kinetic Gloves</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-15">Size:</label>
+                    <select id="size-15" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Sierra Hiking Boots" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Sierra Hiking Boots" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Sierra Hiking Boots</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-16">Size:</label>
+                    <select id="size-16" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Canyon Crossbody Bag" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Canyon Crossbody Bag" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Canyon Crossbody Bag</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-17">Size:</label>
+                    <select id="size-17" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Matrix Sunglasses" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Matrix Sunglasses" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Matrix Sunglasses</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-18">Size:</label>
+                    <select id="size-18" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Bolt Charging Dock" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Bolt Charging Dock" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Bolt Charging Dock</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-19">Size:</label>
+                    <select id="size-19" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Quantum Key Chain" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Quantum Key Chain" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Quantum Key Chain</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-20">Size:</label>
+                    <select id="size-20" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Eclipse Joggers" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Eclipse Joggers" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Eclipse Joggers</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-21">Size:</label>
+                    <select id="size-21" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Horizon Running Shoes" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Horizon Running Shoes" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Horizon Running Shoes</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-22">Size:</label>
+                    <select id="size-22" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Drift Windbreaker" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Drift Windbreaker" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Drift Windbreaker</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-23">Size:</label>
+                    <select id="size-23" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Terra Laptop Sleeve" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Terra Laptop Sleeve" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Terra Laptop Sleeve</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-24">Size:</label>
+                    <select id="size-24" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section class="product-card" data-product-name="Lumin Throw Blanket" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+        <img src="logoold.png" alt="Lumin Throw Blanket" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Lumin Throw Blanket</h3>
+            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <label for="size-25">Size:</label>
+                    <select id="size-25" class="size-select">
+                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
+                    </select>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+</main>
+
+<footer class="main-footer">
+    <div class="footer-column footer-branding">
+        <img src="logo1.png" alt="Mina Prestige Logo" class="footer-logo">
+        
+        <div class="social-icons">
+            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 Mina Prestige. All rights reserved.</p>
+        <div class="footer-legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+        </div>
+    </div>
+</footer>
+
+<div id="image-zoom-modal">
+    <span class="close-btn-zoom" onclick="closeZoomModal()">&times;</span>
+    <div class="modal-content-zoom">
+        <img id="zoomed-image" src="" alt="Zoomed Product Image">
+    </div>
+</div>
+<script>
+    // Function to handle color swatch selection
+    function selectColor(swatch) {
+        const productCard = swatch.closest('.product-card');
+        const container = swatch.closest('.color-swatch-container');
+        const newColor = swatch.getAttribute('data-color');
+
+        // 1. Remove 'selected' class from all sibling swatches
+        container.querySelectorAll('.color-swatch').forEach(s => {
+            s.classList.remove('selected');
+        });
+
+        // 2. Add 'selected' class to the clicked swatch
+        swatch.classList.add('selected');
+
+        // 3. Update the data attribute on the product card for the order function
+        productCard.setAttribute('data-selected-color', newColor);
+    }
+
+    // UPDATED: WhatsApp Order Function with Arabic/Emojis
+    function sendOrder(buttonElement) {
+        const productCard = buttonElement.closest('.product-card');
+        const productName = productCard.getAttribute('data-product-name');
+        const whatsappNumber = productCard.getAttribute('data-whatsapp-number');
+        
+        const sizeSelect = productCard.querySelector('.size-select');
+        
+        // Retrieve color from the updated data attribute
+        const color = productCard.getAttribute('data-selected-color') || 'N/A'; 
+        
+        const size = sizeSelect ? sizeSelect.value : 'N/A';
+
+        // The new Arabic message template (using line breaks \n which are automatically encoded to %0A)
+        const arabicMessage = `مرحباً، أود طلب هذا المنتج من متجركم. ✨
+
+*تفاصيل الطلب:* 🛍️
+
+*المنتج:* ${productName}
+*اللون:* ${color}
+*المقاس:* ${size}
+
+يرجى تأكيد التوفر وإجمالي التكلفة.
+شكراً جزيلاً! 🏷️`;
+        
+        const encodedMessage = encodeURIComponent(arabicMessage);
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+        window.open(whatsappUrl, '_blank');
+    }
+
+    
+
+
+    // --- IMAGE ZOOM LOGIC ---
+
+    const zoomModal = document.getElementById('image-zoom-modal');
+    const zoomedImage = document.getElementById('zoomed-image');
+
+    function openZoomModal(imageSrc) {
+        zoomedImage.src = imageSrc;
+        zoomModal.style.display = "flex";
+        document.body.style.overflow = 'hidden'; // Prevent scrolling behind the modal
+    }
+
+    function closeZoomModal() {
+        zoomModal.style.display = "none";
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+
+    // Double-click/Double-tap listener setup
+    function setupZoomListeners() {
+        document.querySelectorAll('.product-image').forEach(image => {
+            // Desktop: Double Click
+            image.addEventListener('click', function() {
+                openZoomModal(this.src);
+            });
+
+            // Mobile: Double Tap (using a timeout for single/double detection)
+            let lastTouch = 0;
+            image.addEventListener('touchend', function(event) {
+                const now = new Date().getTime();
+                const delta = now - lastTouch;
+                
+                // If taps are close together (e.g., within 300ms)
+                if (delta < 300 && delta > 0) {
+                    event.preventDefault(); // Prevent accidental scroll/browser action
+                    openZoomModal(this.src);
+                }
+                lastTouch = now;
+            });
+        });
+        
+        // Close modal when clicking outside the content
+        zoomModal.addEventListener('click', function(event) {
+            if (event.target === zoomModal) {
+                closeZoomModal();
+            }
+        });
+
+        // Close modal with the ESC key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && zoomModal.style.display === 'flex') {
+                closeZoomModal();
+            }
+        });
+    }
+
+    // --- INITIALIZATION AND MAIN LOGIC ---
+
+    // Scroll Reveal Animation (Intersection Observer)
+    const observerOptions = {
+        root: null, // relative to the viewport
+        rootMargin: '0px',
+        threshold: 0.2 // Trigger when 20% of the item is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add the class that triggers the CSS animation
+                entry.target.classList.add('animate-visible');
+                // Stop observing after the animation has been applied
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Header Scroll Shrink/Shadow Logic
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // Run setup functions on load
+    document.addEventListener('DOMContentLoaded', () => {
+        // Target all product cards for scroll animation
+        document.querySelectorAll('.product-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Set up the image zoom functionality
+        setupZoomListeners();
+        
+    });
+</script>
+</body>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/212698302640" target="_blank" class="floating-whatsapp-btn" aria-label="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+</html>
