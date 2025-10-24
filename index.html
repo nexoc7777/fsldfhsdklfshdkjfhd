@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stellar Store - Prestige Collection</title>
+    <title>Mina Prestige</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="icon.png">
+
 </head>
 <body>
 
@@ -23,28 +25,38 @@
 
 <main class="product-grid">
 
-    <section class="product-card" data-product-name="Aero-Knit Hoodie" data-whatsapp-number="+212698302640" data-selected-color="Black">
+    <section 
+        class="product-card" 
+        data-product-name="Chanel - Petit Sac à Rabat avec Poignée" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="Black"
+        data-selected-size="M" 
+        data-image-map='{"Black": "sac1black.jpg", "red": "sac1red.jpg", "Rainbow": "sac1Rainbow.jpg"}'
+    >
         <span class="product-status-badge hot-badge">HOT</span> 
-        <img src="placeholder-image-1.jpg" alt="Aero-Knit Hoodie" class="product-image">
+        <img src="sac1black.jpg" alt="Sac1" class="product-image">
         <div class="product-info">
-            <h3 class="product-title">Aero-Knit Hoodie</h3>
-            <p class="product-description">The ultimate blend of comfort and street style. Features moisture-wicking fabric and a hidden zip pocket.</p>
+            <h3 class="product-title">Chanel - Petit Sac à Rabat avec Poignée</h3>
+            <p class="product-description">Ce mini-format allie le luxe intemporel du matelassage et du fermoir CC avec un porté moderne et sophistiqué, vous assurant une élégance parfaite en toute occasion..</p>
             <div class="details-row">
                 <span class="price">$59.99</span>
             </div>
             <div class="options">
                 <div class="size-group">
-                    <label for="size-1">Size:</label>
-                    <select id="size-1" class="size-select">
-                        <option value="S">S</option><option value="M" selected>M</option><option value="L">L</option><option value="XL">XL</option>
-                    </select>
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="S" onclick="selectSize(this)">S</div>
+                        <div class="size-swatch selected" data-size="M" onclick="selectSize(this)">M</div>
+                        <div class="size-swatch" data-size="L" onclick="selectSize(this)">L</div>
+                        <div class="size-swatch" data-size="XL" onclick="selectSize(this)">XL</div>
+                    </div>
                 </div>
                 <div class="color-group">
                     <span class="option-label">Color:</span>
                     <div class="color-swatch-container">
                         <div class="color-swatch black selected" data-color="Black" onclick="selectColor(this)"></div>
-                        <div class="color-swatch navy" data-color="Navy" onclick="selectColor(this)"></div>
-                        <div class="color-swatch ash-grey" data-color="Ash Grey" onclick="selectColor(this)"></div>
+                        <div class="color-swatch red" data-color="red" onclick="selectColor(this)"></div>
+                        <div class="color-swatch rainbow" data-color="Rainbow" onclick="selectColor(this)"></div>
                     </div>
                 </div>
             </div>
@@ -52,27 +64,37 @@
         </div>
     </section>
 
-    <section class="product-card" data-product-name="Slim-Fit Denim" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+    <section 
+        class="product-card" 
+        data-product-name="Louis Vuitton - Alma BB" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="Dark Wash"
+        data-selected-size="32"
+        data-image-map='{"Dark Wash": "sac2dark.jpg", "beige": "sac2beige.jpg"}'
+    >
         <span class="product-status-badge new-badge">NEW ARRIVAL</span>
-        <img src="placeholder-image-2.jpg" alt="Slim-Fit Denim" class="product-image">
+        <img src="sac2dark.jpg" alt="Louis Vuitton - Alma BB" class="product-image">
         <div class="product-info">
-            <h3 class="product-title">Slim-Fit Denim</h3>
-            <p class="product-description">Premium stretch denim that holds its shape. A modern cut for a sharp look, all day comfort.</p>
+            <h3 class="product-title">Louis Vuitton - Alma BB</h3>
+            <p class="product-description">ce sac emblématique s'impose comme la pièce structurée indispensable pour une allure chic et intemporelle. Son format compact et ses doubles poignées Toron offrent une façon distinguée d'affirmer votre style, que vous le portiez à la main ou en bandoulière.</p>
             <div class="details-row">
                 <span class="price">$89.50</span>
             </div>
             <div class="options">
                 <div class="size-group">
-                    <label for="size-2">Size:</label>
-                    <select id="size-2" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
                 </div>
                 <div class="color-group">
                     <span class="option-label">Color:</span>
                     <div class="color-swatch-container">
                         <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                        <div class="color-swatch beige" data-color="beige" onclick="selectColor(this)"></div>
                     </div>
                 </div>
             </div>
@@ -80,26 +102,118 @@
         </div>
     </section>
 
-    <section class="product-card" data-product-name="Apollo Sneakers" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
+    <section 
+        class="product-card" 
+        data-product-name="Coach New York - Sac Épaule Ergo" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="Dark Wash"
+        data-selected-size="32"
+        data-image-map='{"Dark Wash": "sac3dark.png", "beige": "sac3beige.png", "Rainbow": "sac3Rainbow.jpg"}'
+    >
         <span class="product-status-badge limited-badge">LIMITED EDITION</span>
-        <img src="logoold.png" alt="Apollo Sneakers" class="product-image">
+        <img src="sac3dark.png" alt="Coach New York - Sac Épaule Ergo" class="product-image">
         <div class="product-info">
-            <h3 class="product-title">Apollo Sneakers</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <h3 class="product-title">Coach New York - Sac Épaule Ergo</h3>
+            <p class="product-description">Ce sac bandoulière Coach New York, au style rétro-chic des années 90 et en toile signature, allie confort, ergonomie et élégance urbaine pour la vie moderne..</p>
             <div class="details-row">
                 <span class="price">$89.50</span>
             </div>
             <div class="options">
                 <div class="size-group">
-                    <label for="size-3">Size:</label>
-                    <select id="size-3" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
                 </div>
                 <div class="color-group">
                     <span class="option-label">Color:</span>
                     <div class="color-swatch-container">
                         <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch beige" data-color="beige" onclick="selectColor(this)"></div>
+                        <div class="color-swatch rainbow" data-color="Rainbow" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+    
+    <section 
+        class="product-card" 
+        data-product-name="Coach New York - Sac Épaule Ergo" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="Dark Wash"
+        data-selected-size="32"
+        data-image-map='{"Dark Wash": "sac4dark.jpg", "beige": "sac4beige.jpg"}'
+    >
+        <img src="sac4dark.jpg" alt="Coach New York - Sac Épaule Ergo" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Coach New York - Sac Épaule Ergo</h3>
+            <p class="product-description">Ce sac bandoulière Coach New York, au style rétro-chic des années 90 et en toile signature, allie confort, ergonomie et élégance urbaine pour la vie moderne.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch beige" data-color="beige" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section 
+        class="product-card" 
+        data-product-name="Hermès - Kelly II Sellier Mini" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="Dark Wash"
+        data-selected-size="32"
+        data-image-map='{"green": "sac5green.jpg", "dark pink": "sac5darkpink.jpg", "black": "sac5black.jpg", "pink": "sac5pink.jpg", "brown": "sac5brown.jpg", "white": "sac5white.jpg", "red": "sac5red.jpg", "Light Blue": "sac5grey.jpg"}'
+    >
+        <img src="sac5green.jpg" alt="Hermès - Kelly II Sellier Mini" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Hermès - Kelly II Sellier Mini</h3>
+            <p class="product-description">Ce sac Kelly miniature allie luxe et style, avec une silhouette Sellier structurée et une bandoulière en toile, offrant élégance et dynamisme au quotidien.
+</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch green selected" data-color="green" onclick="selectColor(this)"></div>
+                        <div class="color-swatch dp" data-color="dark pink" onclick="selectColor(this)"></div>
+                        <div class="color-swatch black" data-color="black" onclick="selectColor(this)"></div>
+                        <div class="color-swatch pink" data-color="pink" onclick="selectColor(this)"></div>
+                        <div class="color-swatch brown" data-color="brown" onclick="selectColor(this)"></div>
+                        <div class="color-swatch white" data-color="white" onclick="selectColor(this)"></div>
+                        <div class="color-swatch red" data-color="red" onclick="selectColor(this)"></div>
                         <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
                     </div>
                 </div>
@@ -108,25 +222,150 @@
         </div>
     </section>
     
-    <section class="product-card" data-product-name="Zenith Backpack" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Zenith Backpack" class="product-image">
+    <section 
+        class="product-card" 
+        data-product-name="Miu Miu - Sac à Main Matelassé Matelassé" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="purple"
+        data-selected-size="32"
+        data-image-map='{"purple": "sac6purpel.jpg", "yellow": "sac6yellow.jpg", "brown": "sac6brown.jpg", "orange": "sac6orange.jpg", "beige": "sac6beige.jpg"}'
+    >
+        <img src="sac6purpel.jpg" alt="Miu Miu - Sac à Main Matelassé Matelassé" class="product-image">
         <div class="product-info">
-            <h3 class="product-title">Zenith Backpack</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <h3 class="product-title">Miu Miu - Sac à Main Matelassé Matelassé</h3>
+            <p class="product-description">Ce sac Miu Miu mini, en cuir matelassé et couleur vive, allie luxe jeune et contemporain à une élégance compacte pour transporter vos essentiels avec style.
+</p>
             <div class="details-row">
                 <span class="price">$89.50</span>
             </div>
             <div class="options">
                 <div class="size-group">
-                    <label for="size-4">Size:</label>
-                    <select id="size-4" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
                 </div>
                 <div class="color-group">
                     <span class="option-label">Color:</span>
                     <div class="color-swatch-container">
-                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch purple selected" data-color="purple" onclick="selectColor(this)"></div>
+                        <div class="color-swatch yellow" data-color="yellow" onclick="selectColor(this)"></div>
+                        <div class="color-swatch brown" data-color="brown" onclick="selectColor(this)"></div>
+                        <div class="color-swatch orange" data-color="orange" onclick="selectColor(this)"></div>
+                        <div class="color-swatch beige" data-color="beige" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section 
+        class="product-card" 
+        data-product-name="Hermès - Kelly Danse (ou Pochette Kelly)" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="brown"
+        data-selected-size="32"
+        data-image-map='{"brown": "sac7brown.jpg", "black": "sac7black.jpg"}'
+    >
+        <img src="sac7brown.jpg" alt="Hermès - Kelly Danse (ou Pochette Kelly)" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Hermès - Kelly Danse (ou Pochette Kelly)</h3>
+            <p class="product-description">Ce sac polyvalent allie luxe discret et style intemporel, pouvant se porter en pochette, sac épaule ou ceinture grâce à sa silhouette Sellier et son fermoir Kelly emblématique.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch brown selected" data-color="brown" onclick="selectColor(this)"></div>
+                        <div class="color-swatch black" data-color="black" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section 
+        class="product-card" 
+        data-product-name="Dior - Caro Micro Bag avec Poignée" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="Rainbow"
+        data-selected-size="32"
+        data-image-map='{"Rainbow": "sac8rainbow.jpg", "dark pink": "sac8dp.jpg"}'
+    >
+        <img src="sac8rainbow.jpg" alt="Dior - Caro Micro Bag avec Poignée" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Dior - Caro Micro Bag avec Poignée</h3>
+            <p class="product-description">Ce micro-sac Dior Caro, en cuir verni matelassé Cannage, allie style audacieux et format compact pour transporter l’essentiel avec élégance moderne.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch rainbow selected" data-color="Rainbow" onclick="selectColor(this)"></div>
+                        <div class="color-swatch dp" data-color="dark pink" onclick="selectColor(this)"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+        </div>
+    </section>
+
+    <section 
+        class="product-card" 
+        data-product-name="Gucci - Mini Sac Horsebit 1955" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="Dark Wash"
+        data-selected-size="32"
+        data-image-map='{"dark-wash": "sac9dark.jpg", "Light Blue": "sac9white.jpg"}'
+    >
+        <img src="sac9dark.jpg" alt="Gucci - Mini Sac Horsebit 1955" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Gucci - Mini Sac Horsebit 1955</h3>
+            <p class="product-description">Ce micro-sac Gucci, mêlant toile Monogramme et mors Horsebit, offre un style vintage et un format compact pour transporter vos essentiels avec élégance moderne.</p>
+            <div class="details-row">
+                <span class="price">$89.50</span>
+            </div>
+            <div class="options">
+                <div class="size-group">
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
+                </div>
+                <div class="color-group">
+                    <span class="option-label">Color:</span>
+                    <div class="color-swatch-container">
+                        <div class="color-swatch dark-wash selected" data-color="dark-wash"" onclick="selectColor(this)"></div>
                         <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
                     </div>
                 </div>
@@ -135,53 +374,36 @@
         </div>
     </section>
 
-    <section class="product-card" data-product-name="Aurora Bomber Jacket" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Aurora Bomber Jacket" class="product-image">
+    <section 
+        class="product-card" 
+        data-product-name="Coach New York - Portefeuille Zippé Accordéon" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="-dark wash"
+        data-selected-size="32"
+        data-image-map='{"dark wash": "sac10dark.jpg", "light blue": "sac10white.jpg"}'
+    >
+        <img src="sac10dark.jpg" alt="Coach New York - Portefeuille Zippé Accordéon" class="product-image">
         <div class="product-info">
-            <h3 class="product-title">Aurora Bomber Jacket</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <h3 class="product-title">Coach New York - Portefeuille Zippé Accordéon</h3>
+            <p class="product-description">Ce mini-sac Chanel, au cuir brillant ou mat, combine poignée structurée et bandoulière chaîne pour un luxe compact et un style élégant au quotidien et en soirée.</p>
             <div class="details-row">
                 <span class="price">$89.50</span>
             </div>
             <div class="options">
                 <div class="size-group">
-                    <label for="size-5">Size:</label>
-                    <select id="size-5" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
-                </div>
-                <div class="color-group">
-                    <span class="option-label">Color:</span>
-                    <div class="color-swatch-container">
-                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
                     </div>
                 </div>
-            </div>
-            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
-        </div>
-    </section>
-    
-    <section class="product-card" data-product-name="Fusion Cargo Pants" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Fusion Cargo Pants" class="product-image">
-        <div class="product-info">
-            <h3 class="product-title">Fusion Cargo Pants</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
-            <div class="details-row">
-                <span class="price">$89.50</span>
-            </div>
-            <div class="options">
-                <div class="size-group">
-                    <label for="size-6">Size:</label>
-                    <select id="size-6" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
-                </div>
                 <div class="color-group">
                     <span class="option-label">Color:</span>
                     <div class="color-swatch-container">
-                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                        <div class="color-swatch dark-wash selected" data-color="dark wash" onclick="selectColor(this)"></div>
+                        <div class="color-swatch light-blue" data-color="light blue" onclick="selectColor(this)"></div>
                     </div>
                 </div>
             </div>
@@ -189,26 +411,38 @@
         </div>
     </section>
 
-    <section class="product-card" data-product-name="Apex Smartwatch" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Apex Smartwatch" class="product-image">
+    <section 
+        class="product-card" 
+        data-product-name="Céline - Sac Triomphe Classique avec Poignée" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="brown"
+        data-selected-size="32"
+        data-image-map='{"brown": "sac11brown.jpg", "black": "sac11black.jpg", "rainbow": "sac11rainbow.jpg"}'
+    >
+        <img src="sac11brown.jpg" alt="Céline - Sac Triomphe Classique avec Poignée" class="product-image">
         <div class="product-info">
-            <h3 class="product-title">Apex Smartwatch</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <h3 class="product-title">Céline - Sac Triomphe Classique avec Poignée</h3>
+            <p class="product-description">Ce sac Céline, en cuir luxueux avec fermoir Triomphe, allie silhouette structurée et poignée courte pour un chic intemporel et une élégance moderne.
+</p>
             <div class="details-row">
                 <span class="price">$89.50</span>
             </div>
             <div class="options">
                 <div class="size-group">
-                    <label for="size-7">Size:</label>
-                    <select id="size-7" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
                 </div>
                 <div class="color-group">
                     <span class="option-label">Color:</span>
                     <div class="color-swatch-container">
-                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                        <div class="color-swatch brown selected" data-color="brown" onclick="selectColor(this)"></div>
+                        <div class="color-swatch black" data-color="black" onclick="selectColor(this)"></div>
+                        <div class="color-swatch rainbow" data-color="rainbow" onclick="selectColor(this)"></div>
                     </div>
                 </div>
             </div>
@@ -216,26 +450,35 @@
         </div>
     </section>
 
-    <section class="product-card" data-product-name="Vortex Tech Cap" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Vortex Tech Cap" class="product-image">
+    <section 
+        class="product-card" 
+        data-product-name="Valentino - Petit Portefeuille Rockstud VLogo" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="rainbow"
+        data-selected-size="32"
+        data-image-map='{"rainbow": "sac12rainbow.jpg"}'
+    >
+        <img src="sac12rainbow.jpg" alt="Valentino - Petit Portefeuille Rockstud VLogo" class="product-image">
         <div class="product-info">
-            <h3 class="product-title">Vortex Tech Cap</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <h3 class="product-title">Valentino - Petit Portefeuille Rockstud VLogo</h3>
+            <p class="product-description">Ce portefeuille Valentino, en cuir fin avec logo VLogo doré, offre un format compact et élégant pour organiser cartes et billets avec style.</p>
             <div class="details-row">
                 <span class="price">$89.50</span>
             </div>
             <div class="options">
                 <div class="size-group">
-                    <label for="size-8">Size:</label>
-                    <select id="size-8" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
                 </div>
                 <div class="color-group">
                     <span class="option-label">Color:</span>
                     <div class="color-swatch-container">
-                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                        <div class="color-swatch rainbow selected" data-color="rainbow" onclick="selectColor(this)"></div>
                     </div>
                 </div>
             </div>
@@ -243,26 +486,35 @@
         </div>
     </section>
 
-    <section class="product-card" data-product-name="Echo Performance Tee" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Echo Performance Tee" class="product-image">
+    <section 
+        class="product-card" 
+        data-product-name="TOUS - Sac à bandoulière moyen Kaos Icon Multi Black" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="Dark Wash"
+        data-selected-size="32"
+        data-image-map='{"Dark Wash": "sac13dark.jpg"}'
+    >
+        <img src="sac13dark.jpg" alt="TOUS - Sac à bandoulière moyen Kaos Icon Multi Black" class="product-image">
         <div class="product-info">
-            <h3 class="product-title">Echo Performance Tee</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <h3 class="product-title">TOUS - Sac à bandoulière moyen Kaos Icon Multi Black</h3>
+            <p class="product-description">Ce sac à bandoulière combine élégance et fonctionnalité, avec un design moderne et une fermeture à rabat. Il est idéal pour un usage quotidien ou pour des occasions spéciales.</p>
             <div class="details-row">
                 <span class="price">$89.50</span>
             </div>
             <div class="options">
                 <div class="size-group">
-                    <label for="size-9">Size:</label>
-                    <select id="size-9" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
                 </div>
                 <div class="color-group">
                     <span class="option-label">Color:</span>
                     <div class="color-swatch-container">
                         <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
                     </div>
                 </div>
             </div>
@@ -270,26 +522,36 @@
         </div>
     </section>
 
-    <section class="product-card" data-product-name="Tidal Swim Shorts" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Tidal Swim Shorts" class="product-image">
+    <section 
+        class="product-card" 
+        data-product-name="Coach New York - Sac Épaule Soft Tabby " 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="Dark Wash"
+        data-selected-size="32"
+        data-image-map='{"Dark Wash": "sac14dark.jpg", "brown": "sac14brown.jpg"}'
+    >
+        <img src="sac14dark.jpg" alt="Coach New York - Sac Épaule Soft Tabby " class="product-image">
         <div class="product-info">
-            <h3 class="product-title">Tidal Swim Shorts</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <h3 class="product-title">Coach New York - Sac Épaule Soft Tabby </h3>
+            <p class="product-description">Sac épaule en cuir souple, au design élégant et à la bandoulière ajustable pour un style moderne et pratique.</p>
             <div class="details-row">
                 <span class="price">$89.50</span>
             </div>
             <div class="options">
                 <div class="size-group">
-                    <label for="size-10">Size:</label>
-                    <select id="size-10" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
                 </div>
                 <div class="color-group">
                     <span class="option-label">Color:</span>
                     <div class="color-swatch-container">
                         <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                        <div class="color-swatch brown" data-color="brown" onclick="selectColor(this)"></div>
                     </div>
                 </div>
             </div>
@@ -297,26 +559,35 @@
         </div>
     </section>
 
-    <section class="product-card" data-product-name="Orbit Lounge Set" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Orbit Lounge Set" class="product-image">
+    <section 
+        class="product-card" 
+        data-product-name="Louis Vuitton - Sac Pochette Métis" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="brown"
+        data-selected-size="32"
+        data-image-map='{"brown": "sac15.jpg"}'
+    >
+        <img src="sac15.jpg" alt="Louis Vuitton - Sac Pochette Métis" class="product-image">
         <div class="product-info">
-            <h3 class="product-title">Orbit Lounge Set</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <h3 class="product-title">Louis Vuitton - Sac Pochette Métis</h3>
+            <p class="product-description">Sac pochette en cuir Monogram, compact et sophistiqué, parfait pour un look chic et organisé au quotidien.</p>
             <div class="details-row">
                 <span class="price">$89.50</span>
             </div>
             <div class="options">
                 <div class="size-group">
-                    <label for="size-11">Size:</label>
-                    <select id="size-11" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
                 </div>
                 <div class="color-group">
                     <span class="option-label">Color:</span>
                     <div class="color-swatch-container">
-                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                        <div class="color-swatch brown selected" data-color="brown" onclick="selectColor(this)"></div>
                     </div>
                 </div>
             </div>
@@ -324,26 +595,35 @@
         </div>
     </section>
 
-    <section class="product-card" data-product-name="Nova Utility Vest" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Nova Utility Vest" class="product-image">
+    <section 
+        class="product-card" 
+        data-product-name="Saint Laurent - Tote Shopper Puffy" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="Dark Wash"
+        data-selected-size="32"
+        data-image-map='{"Dark Wash": "sac16.jpg"}'
+    >
+        <img src="sac16.jpg" alt="Saint Laurent - Tote Shopper Puffy" class="product-image">
         <div class="product-info">
-            <h3 class="product-title">Nova Utility Vest</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <h3 class="product-title">Saint Laurent - Tote Shopper Puffy</h3>
+            <p class="product-description">en cuir matelassé, spacieux et élégant, idéal pour un style moderne et raffiné au quotidien.</p>
             <div class="details-row">
                 <span class="price">$89.50</span>
             </div>
             <div class="options">
                 <div class="size-group">
-                    <label for="size-12">Size:</label>
-                    <select id="size-12" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
                 </div>
                 <div class="color-group">
                     <span class="option-label">Color:</span>
                     <div class="color-swatch-container">
                         <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
                     </div>
                 </div>
             </div>
@@ -351,26 +631,36 @@
         </div>
     </section>
 
-    <section class="product-card" data-product-name="Phantom Scarf" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Phantom Scarf" class="product-image">
+    <section 
+        class="product-card" 
+        data-product-name="Dolce & Gabbana - Sac Sicily" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="black"
+        data-selected-size="32"
+        data-image-map='{"black": "sac17black.png", "dp": "sac17dp.jpg"}'
+    >
+        <img src="sac17black.png" alt="Dolce & Gabbana - Sac Sicily" class="product-image">
         <div class="product-info">
-            <h3 class="product-title">Phantom Scarf</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <h3 class="product-title">Dolce & Gabbana - Sac Sicily</h3>
+            <p class="product-description">Sac Sicily en cuir raffiné, au design structuré et intemporel, parfait pour un look élégant et sophistiqué.</p>
             <div class="details-row">
                 <span class="price">$89.50</span>
             </div>
             <div class="options">
                 <div class="size-group">
-                    <label for="size-13">Size:</label>
-                    <select id="size-13" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
                 </div>
                 <div class="color-group">
                     <span class="option-label">Color:</span>
                     <div class="color-swatch-container">
-                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                        <div class="color-swatch black selected" data-color="black" onclick="selectColor(this)"></div>
+                        <div class="color-swatch dp" data-color="dp" onclick="selectColor(this)"></div>
                     </div>
                 </div>
             </div>
@@ -378,26 +668,35 @@
         </div>
     </section>
 
-    <section class="product-card" data-product-name="Glacier Water Bottle" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Glacier Water Bottle" class="product-image">
+    <section 
+        class="product-card" 
+        data-product-name="Gucci - Sac Matelassé GG Marmont" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="dark pink"
+        data-selected-size="32"
+        data-image-map='{"dark pink": "sac18.jpg"}'
+    >
+        <img src="sac18.jpg" alt="Gucci - Sac Matelassé GG Marmont" class="product-image">
         <div class="product-info">
-            <h3 class="product-title">Glacier Water Bottle</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <h3 class="product-title">Gucci - Sac Matelassé GG Marmont</h3>
+            <p class="product-description">-Sac matelassé GG Marmont en cuir, élégant et iconique, avec une bandoulière chaîne pour un style chic et moderne.</p>
             <div class="details-row">
                 <span class="price">$89.50</span>
             </div>
             <div class="options">
                 <div class="size-group">
-                    <label for="size-14">Size:</label>
-                    <select id="size-14" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
                 </div>
                 <div class="color-group">
                     <span class="option-label">Color:</span>
                     <div class="color-swatch-container">
-                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                        <div class="color-swatch dp selected" data-color="dp" onclick="selectColor(this)"></div>
                     </div>
                 </div>
             </div>
@@ -405,26 +704,35 @@
         </div>
     </section>
 
-    <section class="product-card" data-product-name="Kinetic Gloves" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Kinetic Gloves" class="product-image">
+    <section 
+        class="product-card" 
+        data-product-name="Michael Kors - Sac Fourre-Tout Eliza XS en Toile Logotée" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="rainbow"
+        data-selected-size="32"
+        data-image-map='{"rainbow": "sac19.jpg"}'
+    >
+        <img src="sac19.jpg" alt="Michael Kors - Sac Fourre-Tout Eliza XS en Toile Logotée" class="product-image">
         <div class="product-info">
-            <h3 class="product-title">Kinetic Gloves</h3>
+            <h3 class="product-title">Michael Kors - Sac Fourre-Tout Eliza XS en Toile Logotée</h3>
             <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
             <div class="details-row">
                 <span class="price">$89.50</span>
             </div>
             <div class="options">
                 <div class="size-group">
-                    <label for="size-15">Size:</label>
-                    <select id="size-15" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
                 </div>
                 <div class="color-group">
                     <span class="option-label">Color:</span>
                     <div class="color-swatch-container">
-                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                        <div class="color-swatch rainbow selected" data-color="rainbow" onclick="selectColor(this)"></div>
                     </div>
                 </div>
             </div>
@@ -432,26 +740,35 @@
         </div>
     </section>
 
-    <section class="product-card" data-product-name="Sierra Hiking Boots" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Sierra Hiking Boots" class="product-image">
+    <section 
+        class="product-card" 
+        data-product-name="Louis Vuitton - Portefeuille à Rabat Victorine" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="rainbow"
+        data-selected-size="32"
+        data-image-map='{"rainbow": "sac20.jpg"}'
+    >
+        <img src="sac20.jpg" alt="Louis Vuitton - Portefeuille à Rabat Victorine" class="product-image">
         <div class="product-info">
-            <h3 class="product-title">Sierra Hiking Boots</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <h3 class="product-title">Louis Vuitton - Portefeuille à Rabat Victorine</h3>
+            <p class="product-description">Portefeuille à rabat Victorine en cuir Monogram, compact et élégant, parfait pour organiser cartes et billets avec style.</p>
             <div class="details-row">
                 <span class="price">$89.50</span>
             </div>
             <div class="options">
                 <div class="size-group">
-                    <label for="size-16">Size:</label>
-                    <select id="size-16" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
                 </div>
                 <div class="color-group">
                     <span class="option-label">Color:</span>
                     <div class="color-swatch-container">
-                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                        <div class="color-swatch rainbow selected" data-color="rainbow" onclick="selectColor(this)"></div>
                     </div>
                 </div>
             </div>
@@ -459,26 +776,35 @@
         </div>
     </section>
 
-    <section class="product-card" data-product-name="Canyon Crossbody Bag" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Canyon Crossbody Bag" class="product-image">
+    <section 
+        class="product-card" 
+        data-product-name="CELINE - Porte-cartes Triomphe veau brillant" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="rainbow"
+        data-selected-size="32"
+        data-image-map='{"rainbow": "sac21.jpg", "Light Blue": "logoold-alt.png"}'
+    >
+        <img src="sac21.jpg" alt="CELINE - Porte-cartes Triomphe veau brillant" class="product-image">
         <div class="product-info">
-            <h3 class="product-title">Canyon Crossbody Bag</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <h3 class="product-title">CELINE - Porte-cartes Triomphe veau brillant</h3>
+            <p class="product-description">Porte-cartes Triomphe en cuir de veau brillant, élégant et compact, parfait pour ranger cartes avec style.</p>
             <div class="details-row">
                 <span class="price">$89.50</span>
             </div>
             <div class="options">
                 <div class="size-group">
-                    <label for="size-17">Size:</label>
-                    <select id="size-17" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
                 </div>
                 <div class="color-group">
                     <span class="option-label">Color:</span>
                     <div class="color-swatch-container">
-                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                        <div class="color-swatch rainbow selected" data-color="rainbow" onclick="selectColor(this)"></div>
                     </div>
                 </div>
             </div>
@@ -486,26 +812,36 @@
         </div>
     </section>
 
-    <section class="product-card" data-product-name="Matrix Sunglasses" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Matrix Sunglasses" class="product-image">
+    <section 
+        class="product-card" 
+        data-product-name="Louis Vuitton - Portefeuille Brazza (Toile Damier Graphite)" 
+        data-whatsapp-number="+212698302640" 
+        data-selected-color="Dark Wash"
+        data-selected-size="32"
+        data-image-map='{"Dark Wash": "sac221.jpg", "Dark Wash": "sac222.jpg"}'
+    >
+        <img src="sac221.jpg" alt="Louis Vuitton - Portefeuille Brazza (Toile Damier Graphite)" class="product-image">
         <div class="product-info">
-            <h3 class="product-title">Matrix Sunglasses</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
+            <h3 class="product-title">Louis Vuitton - Portefeuille Brazza (Toile Damier Graphite)</h3>
+            <p class="product-description">Portefeuille Brazza en toile Damier Graphite, élégant et spacieux, idéal pour organiser billets et cartes avec sophistication.</p>
             <div class="details-row">
                 <span class="price">$89.50</span>
             </div>
             <div class="options">
                 <div class="size-group">
-                    <label for="size-18">Size:</label>
-                    <select id="size-18" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
+                    <span class="option-label">Size:</span>
+                    <div class="size-swatch-container">
+                        <div class="size-swatch" data-size="30" onclick="selectSize(this)">30</div>
+                        <div class="size-swatch selected" data-size="32" onclick="selectSize(this)">32</div>
+                        <div class="size-swatch" data-size="34" onclick="selectSize(this)">34</div>
+                        <div class="size-swatch" data-size="36" onclick="selectSize(this)">36</div>
+                    </div>
                 </div>
                 <div class="color-group">
                     <span class="option-label">Color:</span>
                     <div class="color-swatch-container">
                         <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
+                        <div class="color-swatch dark-wash" data-color="Dark Wash" onclick="selectColor(this)"></div>
                     </div>
                 </div>
             </div>
@@ -513,194 +849,410 @@
         </div>
     </section>
 
-    <section class="product-card" data-product-name="Bolt Charging Dock" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Bolt Charging Dock" class="product-image">
-        <div class="product-info">
-            <h3 class="product-title">Bolt Charging Dock</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
-            <div class="details-row">
-                <span class="price">$89.50</span>
-            </div>
-            <div class="options">
-                <div class="size-group">
-                    <label for="size-19">Size:</label>
-                    <select id="size-19" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
-                </div>
-                <div class="color-group">
-                    <span class="option-label">Color:</span>
-                    <div class="color-swatch-container">
-                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
-                    </div>
-                </div>
-            </div>
-            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+   <section class="product-card coming-soon">
+  <img src="coming-soon.jpg" alt="Coming Soon" class="product-image">
+  <div class="product-info">
+    <h3 class="product-title">Coming Soon</h3>
+    <p class="product-description">New arrivals are on the way 🚀</p>
+    <div class="details-row">
+      <span class="price">—</span>
+    </div>
+    <div class="options">
+      <div class="size-group">
+        <span class="option-label">Size:</span>
+        <div class="size-swatch-container">
+          <div class="size-swatch disabled">–</div>
         </div>
-    </section>
+      </div>
+      <div class="color-group">
+        <span class="option-label">Color:</span>
+        <div class="color-swatch-container">
+          <div class="color-swatch disabled"></div>
+        </div>
+      </div>
+    </div>
+    <button class="whatsapp-btn disabled">Coming Soon</button>
+  </div>
+</section>
 
-    <section class="product-card" data-product-name="Quantum Key Chain" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Quantum Key Chain" class="product-image">
-        <div class="product-info">
-            <h3 class="product-title">Quantum Key Chain</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
-            <div class="details-row">
-                <span class="price">$89.50</span>
-            </div>
-            <div class="options">
-                <div class="size-group">
-                    <label for="size-20">Size:</label>
-                    <select id="size-20" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
-                </div>
-                <div class="color-group">
-                    <span class="option-label">Color:</span>
-                    <div class="color-swatch-container">
-                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
-                    </div>
-                </div>
-            </div>
-            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
-        </div>
-    </section>
 
-    <section class="product-card" data-product-name="Eclipse Joggers" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Eclipse Joggers" class="product-image">
-        <div class="product-info">
-            <h3 class="product-title">Eclipse Joggers</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
-            <div class="details-row">
-                <span class="price">$89.50</span>
-            </div>
-            <div class="options">
-                <div class="size-group">
-                    <label for="size-21">Size:</label>
-                    <select id="size-21" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
-                </div>
-                <div class="color-group">
-                    <span class="option-label">Color:</span>
-                    <div class="color-swatch-container">
-                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
-                    </div>
-                </div>
-            </div>
-            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+    <section class="product-card coming-soon">
+  <img src="coming-soon.jpg" alt="Coming Soon" class="product-image">
+  <div class="product-info">
+    <h3 class="product-title">Coming Soon</h3>
+    <p class="product-description">New arrivals are on the way 🚀</p>
+    <div class="details-row">
+      <span class="price">—</span>
+    </div>
+    <div class="options">
+      <div class="size-group">
+        <span class="option-label">Size:</span>
+        <div class="size-swatch-container">
+          <div class="size-swatch disabled">–</div>
         </div>
-    </section>
+      </div>
+      <div class="color-group">
+        <span class="option-label">Color:</span>
+        <div class="color-swatch-container">
+          <div class="color-swatch disabled"></div>
+        </div>
+      </div>
+    </div>
+    <button class="whatsapp-btn disabled">Coming Soon</button>
+  </div>
+</section>
 
-    <section class="product-card" data-product-name="Horizon Running Shoes" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Horizon Running Shoes" class="product-image">
-        <div class="product-info">
-            <h3 class="product-title">Horizon Running Shoes</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
-            <div class="details-row">
-                <span class="price">$89.50</span>
-            </div>
-            <div class="options">
-                <div class="size-group">
-                    <label for="size-22">Size:</label>
-                    <select id="size-22" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
-                </div>
-                <div class="color-group">
-                    <span class="option-label">Color:</span>
-                    <div class="color-swatch-container">
-                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
-                    </div>
-                </div>
-            </div>
-            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
-        </div>
-    </section>
 
-    <section class="product-card" data-product-name="Drift Windbreaker" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Drift Windbreaker" class="product-image">
-        <div class="product-info">
-            <h3 class="product-title">Drift Windbreaker</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
-            <div class="details-row">
-                <span class="price">$89.50</span>
-            </div>
-            <div class="options">
-                <div class="size-group">
-                    <label for="size-23">Size:</label>
-                    <select id="size-23" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
-                </div>
-                <div class="color-group">
-                    <span class="option-label">Color:</span>
-                    <div class="color-swatch-container">
-                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
-                    </div>
-                </div>
-            </div>
-            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+   <section class="product-card coming-soon">
+  <img src="coming-soon.jpg" alt="Coming Soon" class="product-image">
+  <div class="product-info">
+    <h3 class="product-title">Coming Soon</h3>
+    <p class="product-description">New arrivals are on the way 🚀</p>
+    <div class="details-row">
+      <span class="price">—</span>
+    </div>
+    <div class="options">
+      <div class="size-group">
+        <span class="option-label">Size:</span>
+        <div class="size-swatch-container">
+          <div class="size-swatch disabled">–</div>
         </div>
-    </section>
-
-    <section class="product-card" data-product-name="Terra Laptop Sleeve" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Terra Laptop Sleeve" class="product-image">
-        <div class="product-info">
-            <h3 class="product-title">Terra Laptop Sleeve</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
-            <div class="details-row">
-                <span class="price">$89.50</span>
-            </div>
-            <div class="options">
-                <div class="size-group">
-                    <label for="size-24">Size:</label>
-                    <select id="size-24" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
-                </div>
-                <div class="color-group">
-                    <span class="option-label">Color:</span>
-                    <div class="color-swatch-container">
-                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
-                    </div>
-                </div>
-            </div>
-            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+      </div>
+      <div class="color-group">
+        <span class="option-label">Color:</span>
+        <div class="color-swatch-container">
+          <div class="color-swatch disabled"></div>
         </div>
-    </section>
-
-    <section class="product-card" data-product-name="Lumin Throw Blanket" data-whatsapp-number="+212698302640" data-selected-color="Dark Wash">
-        <img src="logoold.png" alt="Lumin Throw Blanket" class="product-image">
-        <div class="product-info">
-            <h3 class="product-title">Lumin Throw Blanket</h3>
-            <p class="product-description">A premium, stylish, and high-performance item designed for modern life.</p>
-            <div class="details-row">
-                <span class="price">$89.50</span>
-            </div>
-            <div class="options">
-                <div class="size-group">
-                    <label for="size-25">Size:</label>
-                    <select id="size-25" class="size-select">
-                        <option value="30">30</option><option value="32" selected>32</option><option value="34">34</option><option value="36">36</option>
-                    </select>
-                </div>
-                <div class="color-group">
-                    <span class="option-label">Color:</span>
-                    <div class="color-swatch-container">
-                        <div class="color-swatch dark-wash selected" data-color="Dark Wash" onclick="selectColor(this)"></div>
-                        <div class="color-swatch light-blue" data-color="Light Blue" onclick="selectColor(this)"></div>
-                    </div>
-                </div>
-            </div>
-            <button class="whatsapp-btn" onclick="sendOrder(this)">Order via WhatsApp</button>
+      </div>
+    </div>
+    <button class="whatsapp-btn disabled">Coming Soon</button>
+  </div>
+</section>
+<section class="product-card coming-soon">
+  <img src="coming-soon.jpg" alt="Coming Soon" class="product-image">
+  <div class="product-info">
+    <h3 class="product-title">Coming Soon</h3>
+    <p class="product-description">New arrivals are on the way 🚀</p>
+    <div class="details-row">
+      <span class="price">—</span>
+    </div>
+    <div class="options">
+      <div class="size-group">
+        <span class="option-label">Size:</span>
+        <div class="size-swatch-container">
+          <div class="size-swatch disabled">–</div>
         </div>
-    </section>
+      </div>
+      <div class="color-group">
+        <span class="option-label">Color:</span>
+        <div class="color-swatch-container">
+          <div class="color-swatch disabled"></div>
+        </div>
+      </div>
+    </div>
+    <button class="whatsapp-btn disabled">Coming Soon</button>
+  </div>
+</section>
+<section class="product-card coming-soon">
+  <img src="coming-soon.jpg" alt="Coming Soon" class="product-image">
+  <div class="product-info">
+    <h3 class="product-title">Coming Soon</h3>
+    <p class="product-description">New arrivals are on the way 🚀</p>
+    <div class="details-row">
+      <span class="price">—</span>
+    </div>
+    <div class="options">
+      <div class="size-group">
+        <span class="option-label">Size:</span>
+        <div class="size-swatch-container">
+          <div class="size-swatch disabled">–</div>
+        </div>
+      </div>
+      <div class="color-group">
+        <span class="option-label">Color:</span>
+        <div class="color-swatch-container">
+          <div class="color-swatch disabled"></div>
+        </div>
+      </div>
+    </div>
+    <button class="whatsapp-btn disabled">Coming Soon</button>
+  </div>
+</section>
+<section class="product-card coming-soon">
+  <img src="coming-soon.jpg" alt="Coming Soon" class="product-image">
+  <div class="product-info">
+    <h3 class="product-title">Coming Soon</h3>
+    <p class="product-description">New arrivals are on the way 🚀</p>
+    <div class="details-row">
+      <span class="price">—</span>
+    </div>
+    <div class="options">
+      <div class="size-group">
+        <span class="option-label">Size:</span>
+        <div class="size-swatch-container">
+          <div class="size-swatch disabled">–</div>
+        </div>
+      </div>
+      <div class="color-group">
+        <span class="option-label">Color:</span>
+        <div class="color-swatch-container">
+          <div class="color-swatch disabled"></div>
+        </div>
+      </div>
+    </div>
+    <button class="whatsapp-btn disabled">Coming Soon</button>
+  </div>
+</section>
+<section class="product-card coming-soon">
+  <img src="coming-soon.jpg" alt="Coming Soon" class="product-image">
+  <div class="product-info">
+    <h3 class="product-title">Coming Soon</h3>
+    <p class="product-description">New arrivals are on the way 🚀</p>
+    <div class="details-row">
+      <span class="price">—</span>
+    </div>
+    <div class="options">
+      <div class="size-group">
+        <span class="option-label">Size:</span>
+        <div class="size-swatch-container">
+          <div class="size-swatch disabled">–</div>
+        </div>
+      </div>
+      <div class="color-group">
+        <span class="option-label">Color:</span>
+        <div class="color-swatch-container">
+          <div class="color-swatch disabled"></div>
+        </div>
+      </div>
+    </div>
+    <button class="whatsapp-btn disabled">Coming Soon</button>
+  </div>
+</section>
+<section class="product-card coming-soon">
+  <img src="coming-soon.jpg" alt="Coming Soon" class="product-image">
+  <div class="product-info">
+    <h3 class="product-title">Coming Soon</h3>
+    <p class="product-description">New arrivals are on the way 🚀</p>
+    <div class="details-row">
+      <span class="price">—</span>
+    </div>
+    <div class="options">
+      <div class="size-group">
+        <span class="option-label">Size:</span>
+        <div class="size-swatch-container">
+          <div class="size-swatch disabled">–</div>
+        </div>
+      </div>
+      <div class="color-group">
+        <span class="option-label">Color:</span>
+        <div class="color-swatch-container">
+          <div class="color-swatch disabled"></div>
+        </div>
+      </div>
+    </div>
+    <button class="whatsapp-btn disabled">Coming Soon</button>
+  </div>
+</section>
+<section class="product-card coming-soon">
+  <img src="coming-soon.jpg" alt="Coming Soon" class="product-image">
+  <div class="product-info">
+    <h3 class="product-title">Coming Soon</h3>
+    <p class="product-description">New arrivals are on the way 🚀</p>
+    <div class="details-row">
+      <span class="price">—</span>
+    </div>
+    <div class="options">
+      <div class="size-group">
+        <span class="option-label">Size:</span>
+        <div class="size-swatch-container">
+          <div class="size-swatch disabled">–</div>
+        </div>
+      </div>
+      <div class="color-group">
+        <span class="option-label">Color:</span>
+        <div class="color-swatch-container">
+          <div class="color-swatch disabled"></div>
+        </div>
+      </div>
+    </div>
+    <button class="whatsapp-btn disabled">Coming Soon</button>
+  </div>
+</section>
+<section class="product-card coming-soon">
+  <img src="coming-soon.jpg" alt="Coming Soon" class="product-image">
+  <div class="product-info">
+    <h3 class="product-title">Coming Soon</h3>
+    <p class="product-description">New arrivals are on the way 🚀</p>
+    <div class="details-row">
+      <span class="price">—</span>
+    </div>
+    <div class="options">
+      <div class="size-group">
+        <span class="option-label">Size:</span>
+        <div class="size-swatch-container">
+          <div class="size-swatch disabled">–</div>
+        </div>
+      </div>
+      <div class="color-group">
+        <span class="option-label">Color:</span>
+        <div class="color-swatch-container">
+          <div class="color-swatch disabled"></div>
+        </div>
+      </div>
+    </div>
+    <button class="whatsapp-btn disabled">Coming Soon</button>
+  </div>
+</section>
+<section class="product-card coming-soon">
+  <img src="coming-soon.jpg" alt="Coming Soon" class="product-image">
+  <div class="product-info">
+    <h3 class="product-title">Coming Soon</h3>
+    <p class="product-description">New arrivals are on the way 🚀</p>
+    <div class="details-row">
+      <span class="price">—</span>
+    </div>
+    <div class="options">
+      <div class="size-group">
+        <span class="option-label">Size:</span>
+        <div class="size-swatch-container">
+          <div class="size-swatch disabled">–</div>
+        </div>
+      </div>
+      <div class="color-group">
+        <span class="option-label">Color:</span>
+        <div class="color-swatch-container">
+          <div class="color-swatch disabled"></div>
+        </div>
+      </div>
+    </div>
+    <button class="whatsapp-btn disabled">Coming Soon</button>
+  </div>
+</section>
+<section class="product-card coming-soon">
+  <img src="coming-soon.jpg" alt="Coming Soon" class="product-image">
+  <div class="product-info">
+    <h3 class="product-title">Coming Soon</h3>
+    <p class="product-description">New arrivals are on the way 🚀</p>
+    <div class="details-row">
+      <span class="price">—</span>
+    </div>
+    <div class="options">
+      <div class="size-group">
+        <span class="option-label">Size:</span>
+        <div class="size-swatch-container">
+          <div class="size-swatch disabled">–</div>
+        </div>
+      </div>
+      <div class="color-group">
+        <span class="option-label">Color:</span>
+        <div class="color-swatch-container">
+          <div class="color-swatch disabled"></div>
+        </div>
+      </div>
+    </div>
+    <button class="whatsapp-btn disabled">Coming Soon</button>
+  </div>
+</section>
+<section class="product-card coming-soon">
+  <img src="coming-soon.jpg" alt="Coming Soon" class="product-image">
+  <div class="product-info">
+    <h3 class="product-title">Coming Soon</h3>
+    <p class="product-description">New arrivals are on the way 🚀</p>
+    <div class="details-row">
+      <span class="price">—</span>
+    </div>
+    <div class="options">
+      <div class="size-group">
+        <span class="option-label">Size:</span>
+        <div class="size-swatch-container">
+          <div class="size-swatch disabled">–</div>
+        </div>
+      </div>
+      <div class="color-group">
+        <span class="option-label">Color:</span>
+        <div class="color-swatch-container">
+          <div class="color-swatch disabled"></div>
+        </div>
+      </div>
+    </div>
+    <button class="whatsapp-btn disabled">Coming Soon</button>
+  </div>
+</section>
+<section class="product-card coming-soon">
+  <img src="coming-soon.jpg" alt="Coming Soon" class="product-image">
+  <div class="product-info">
+    <h3 class="product-title">Coming Soon</h3>
+    <p class="product-description">New arrivals are on the way 🚀</p>
+    <div class="details-row">
+      <span class="price">—</span>
+    </div>
+    <div class="options">
+      <div class="size-group">
+        <span class="option-label">Size:</span>
+        <div class="size-swatch-container">
+          <div class="size-swatch disabled">–</div>
+        </div>
+      </div>
+      <div class="color-group">
+        <span class="option-label">Color:</span>
+        <div class="color-swatch-container">
+          <div class="color-swatch disabled"></div>
+        </div>
+      </div>
+    </div>
+    <button class="whatsapp-btn disabled">Coming Soon</button>
+  </div>
+</section>
+<section class="product-card coming-soon">
+  <img src="coming-soon.jpg" alt="Coming Soon" class="product-image">
+  <div class="product-info">
+    <h3 class="product-title">Coming Soon</h3>
+    <p class="product-description">New arrivals are on the way 🚀</p>
+    <div class="details-row">
+      <span class="price">—</span>
+    </div>
+    <div class="options">
+      <div class="size-group">
+        <span class="option-label">Size:</span>
+        <div class="size-swatch-container">
+          <div class="size-swatch disabled">–</div>
+        </div>
+      </div>
+      <div class="color-group">
+        <span class="option-label">Color:</span>
+        <div class="color-swatch-container">
+          <div class="color-swatch disabled"></div>
+        </div>
+      </div>
+    </div>
+    <button class="whatsapp-btn disabled">Coming Soon</button>
+  </div>
+</section>
+<section class="product-card coming-soon">
+  <img src="coming-soon.jpg" alt="Coming Soon" class="product-image">
+  <div class="product-info">
+    <h3 class="product-title">Coming Soon</h3>
+    <p class="product-description">New arrivals are on the way 🚀</p>
+    <div class="details-row">
+      <span class="price">—</span>
+    </div>
+    <div class="options">
+      <div class="size-group">
+        <span class="option-label">Size:</span>
+        <div class="size-swatch-container">
+          <div class="size-swatch disabled">–</div>
+        </div>
+      </div>
+      <div class="color-group">
+        <span class="option-label">Color:</span>
+        <div class="color-swatch-container">
+          <div class="color-swatch disabled"></div>
+        </div>
+      </div>
+    </div>
+    <button class="whatsapp-btn disabled">Coming Soon</button>
+  </div>
+</section>
 
 </main>
 
@@ -732,8 +1284,27 @@
         <img id="zoomed-image" src="" alt="Zoomed Product Image">
     </div>
 </div>
+
 <script>
-    // Function to handle color swatch selection
+    // --- NEW SIZE SELECTION FUNCTION ---
+    function selectSize(swatch) {
+        const container = swatch.closest('.size-swatch-container');
+        const newSize = swatch.getAttribute('data-size');
+        const productCard = swatch.closest('.product-card');
+
+        // 1. Remove 'selected' class from all sibling swatches
+        container.querySelectorAll('.size-swatch').forEach(s => {
+            s.classList.remove('selected');
+        });
+
+        // 2. Add 'selected' class to the clicked swatch
+        swatch.classList.add('selected');
+
+        // 3. Update the data attribute on the product card for the order function to use
+        productCard.setAttribute('data-selected-size', newSize);
+    }
+    
+    // --- COLOR SELECTION & IMAGE SWITCHING FUNCTION ---
     function selectColor(swatch) {
         const productCard = swatch.closest('.product-card');
         const container = swatch.closest('.color-swatch-container');
@@ -749,22 +1320,37 @@
 
         // 3. Update the data attribute on the product card for the order function
         productCard.setAttribute('data-selected-color', newColor);
+        
+        // 4. IMAGE SWITCHING LOGIC
+        const imageMapString = productCard.getAttribute('data-image-map');
+        if (imageMapString) {
+            try {
+                const imageMap = JSON.parse(imageMapString);
+                const productImage = productCard.querySelector('.product-image');
+                const newImageSrc = imageMap[newColor];
+                
+                if (newImageSrc && productImage) {
+                    productImage.src = newImageSrc;
+                }
+            } catch (e) {
+                console.error("Error parsing data-image-map JSON:", e);
+            }
+        }
     }
 
-    // UPDATED: WhatsApp Order Function with Arabic/Emojis
+    // --- WHATSAPP ORDER FUNCTION (UPDATED) ---
     function sendOrder(buttonElement) {
         const productCard = buttonElement.closest('.product-card');
         const productName = productCard.getAttribute('data-product-name');
         const whatsappNumber = productCard.getAttribute('data-whatsapp-number');
         
-        const sizeSelect = productCard.querySelector('.size-select');
-        
-        // Retrieve color from the updated data attribute
+        // Retrieve size from the new data attribute
+        const size = productCard.getAttribute('data-selected-size') || 'N/A';
+        // Retrieve color from the existing data attribute
         const color = productCard.getAttribute('data-selected-color') || 'N/A'; 
         
-        const size = sizeSelect ? sizeSelect.value : 'N/A';
 
-        // The new Arabic message template (using line breaks \n which are automatically encoded to %0A)
+        // The Arabic message template
         const arabicMessage = `مرحباً، أود طلب هذا المنتج من متجركم. ✨
 
 *تفاصيل الطلب:* 🛍️
@@ -804,12 +1390,12 @@
     // Double-click/Double-tap listener setup
     function setupZoomListeners() {
         document.querySelectorAll('.product-image').forEach(image => {
-            // Desktop: Double Click
+            // Desktop: Click to open
             image.addEventListener('click', function() {
                 openZoomModal(this.src);
             });
 
-            // Mobile: Double Tap (using a timeout for single/double detection)
+            // Mobile: Double Tap
             let lastTouch = 0;
             image.addEventListener('touchend', function(event) {
                 const now = new Date().getTime();
@@ -881,8 +1467,56 @@
         
     });
 </script>
+<script>
+function selectColor(element) {
+    const color = element.dataset.color;
+    const colorGroup = element.closest('.color-group');
+    const productCard = element.closest('.product-card');
+    const imageMap = JSON.parse(productCard.getAttribute('data-image-map'));
+
+    // Update selected color visually
+    colorGroup.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('selected'));
+    element.classList.add('selected');
+
+    // Update product data attribute
+    productCard.setAttribute('data-selected-color', color);
+
+    // Change product image dynamically
+    const productImage = productCard.querySelector('.product-image');
+    if (imageMap[color]) {
+        productImage.src = imageMap[color];
+        productImage.alt = `${productCard.dataset.productName} - ${color}`;
+    }
+}
+
+function selectSize(element) {
+    const sizeGroup = element.closest('.size-group');
+    const productCard = element.closest('.product-card');
+    const size = element.dataset.size;
+
+    // Update selected size visually
+    sizeGroup.querySelectorAll('.size-swatch').forEach(s => s.classList.remove('selected'));
+    element.classList.add('selected');
+
+    // Update product data attribute
+    productCard.setAttribute('data-selected-size', size);
+}
+
+function sendOrder(button) {
+    const productCard = button.closest('.product-card');
+    const name = productCard.dataset.productName;
+    const color = productCard.dataset.selectedColor;
+    const size = productCard.dataset.selectedSize;
+    const number = productCard.dataset.whatsappNumber;
+
+    const message = `👋 مرحبا! أود طلب منتج *${name}* 🛍️\nاللون: ${color}\nالمقاس: ${size}\nيرجى تأكيد الطلب ✅`;
+    const encodedMsg = encodeURIComponent(message);
+
+    window.open(`https://wa.me/${number.replace(/\D/g, '')}?text=${encodedMsg}`, '_blank');
+}
+</script>
+
 </body>
-<!-- Floating WhatsApp Button -->
 <a href="https://wa.me/212698302640" target="_blank" class="floating-whatsapp-btn" aria-label="Chat with us on WhatsApp">
     <i class="fab fa-whatsapp"></i>
 </a>
